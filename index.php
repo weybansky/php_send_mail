@@ -47,15 +47,7 @@
 							<option value="male">Male</option>
 							<option value="female">Female</option>
 						</select>
-					</div>
-					<div class="form-group">
-						<label for="location">Location</label>
-						<input type="text" name="location" class="form-control">
-					</div>
-					<div class="form-group">
-						<label for="destination">Destination</label>
-						<input type="text" name="destination" class="form-control">
-					</div>						
+					</div>				
 
 					<div class="form-group">
 						<button name="submit" type="submit" class="form-control btn btn-warning">Submit</button>
@@ -74,8 +66,6 @@
 							$email 			 = $_POST['email'];
 							$contact 		 = $_POST['contact'];
 							$gender 		 = $_POST['gender'];
-							$location 	 = $_POST['location'];
-							$destination = $_POST['destination'];
 
 							// Form field validation
 							// validation == false when it fails
@@ -107,18 +97,6 @@
 							if ($gender == '0') {
 								$validation == false;
 								header("location: index.php?status=danger&message=Gender is empty");
-								exit();
-							}
-							// Location
-							if (empty($location)) {
-								$validation == false;
-								header("location: index.php?status=danger&message=Location is empty");
-								exit();
-							}
-							// Destination
-							if (empty($destination)) {
-								$validation == false;
-								header("location: index.php?status=danger&message=Destination is empty");
 								exit();
 							}
 

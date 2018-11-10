@@ -52,14 +52,6 @@ $message = <<<EOD
               <td>Gender:</td>
               <td>$gender</td>
           </tr>
-          <tr>
-              <td>Location:</td>
-              <td>$location</td>
-          </tr>
-          <tr>
-              <td>Destination:</td>
-              <td>$destination</td>
-          </tr>
       </tbody>
   </table>
 </div>

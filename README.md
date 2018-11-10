@@ -1,1 +1,2 @@
-# php_send_mail
+# PHP Send Mail
+Send email using PHPMailer
